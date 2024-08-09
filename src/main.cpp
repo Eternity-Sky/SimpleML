@@ -1,17 +1,19 @@
-#include <iostream>
-#include <vector>
 #include "LinearRegression.h"
+#include <iostream> // 添加此行
+#include <vector> // 添加此行，如果使用 std::vector
 
 int main() {
-    LinearRegression model;
+    LinearRegression lr;
     std::vector<double> X = {1, 2, 3, 4, 5};
-    std::vector<double> y = {2, 3, 5, 7, 11};
+    std::vector<double> y = {2, 4, 6, 8, 10};
 
-    model.fit(X, y);
+    lr.fit(X, y);
+    for (auto coeff : lr.getCoefficients()) {
+        std::cout << "Coefficient: " << coeff << std::endl; // 输出斜率和截距
+    }
 
-    double x_test = 6;
-    double prediction = model.predict(x_test);
-    std::cout << "Predicted value for x = " << x_test << " is " << prediction << std::endl;
+    double predicted = lr.predict(6);
+    std::cout << "Predicted value for x = 6 is " << predicted << std::endl;
 
     return 0;
 }
