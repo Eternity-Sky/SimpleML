@@ -52,3 +52,8 @@ Snippet_Manager/
 
 ## 许可证
 此项目使用 MIT 许可证。有关详细信息，请查看 LICENSE 文件。
+
+## 联系信息
+如果你有任何问题或建议，可以通过以下方式联系我：
+- Email:tengyumo666@hotmail.com
+- GitHub:Eternity-Sky
